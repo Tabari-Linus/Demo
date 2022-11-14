@@ -1,4 +1,3 @@
-
 # importing libraries
 
 import cv2
@@ -14,14 +13,12 @@ def resize(img, size):
     return cv2.resize(img, dimension, interpolation=cv2.INTER_AREA)
 
 
-
 #img declaration 
 linus = face_rec.load_image_file('images/linus.jpg')
 linus = cv2.cvtColor(linus, cv2.COLOR_BGR2RGB)
 
-linus_test = face_rec.load_image_file('images/linust.jpg')
+linus_test = face_rec.load_image_file('images/kenneth.webp')
 linus_test = cv2.cvtColor(linus_test, cv2.COLOR_BGR2RGB)
-
 
 
 #finding face location
